@@ -3,7 +3,7 @@ from pathlib import Path
 
 ACCESS_TOKEN = "f2187922864e45528fd750a69eb9e326"
 
-VER = "61af549cc22df4aab1ea7819dc5ad117f6cb7c1f"
+VER = "fce5f0091e919d20ff30efd303ac9f66300c7824"
 
 def report(ver: str) -> None:
     rollbar.init(
