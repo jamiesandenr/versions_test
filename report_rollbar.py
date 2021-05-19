@@ -15,6 +15,7 @@ def report(ver: str) -> None:
 
     try:
         1/0.0000001
+        print(p)
     except:
         rollbar.report_exc_info()
 
