@@ -12,7 +12,7 @@ def report(ver: str) -> None:
         code_version=ver,
         root=str(Path(".").parent),
     )
-
+    # here is a comment
     try:
         1/0.0000001
     except:
