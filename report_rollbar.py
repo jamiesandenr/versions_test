@@ -3,8 +3,8 @@ from pathlib import Path
 
 ACCESS_TOKEN = "f2187922864e45528fd750a69eb9e326"
 
-VER = "af1a69d276400f11caa79ecd7f48766f2e0e5939"
-# yet another comment!
+VER = "61af549cc22df4aab1ea7819dc5ad117f6cb7c1f"
+
 def report(ver: str) -> None:
     rollbar.init(
         access_token=ACCESS_TOKEN,
@@ -12,9 +12,9 @@ def report(ver: str) -> None:
         code_version=ver,
         root=str(Path(".").parent),
     )
-    # here is a comment
+
     try:
-        1/0.0000001
+        1/0
     except:
         rollbar.report_exc_info()
 
