@@ -3,7 +3,7 @@ from pathlib import Path
 
 ACCESS_TOKEN = "f2187922864e45528fd750a69eb9e326"
 
-VER = "61af549cc22df4aab1ea7819dc5ad117f6cb7c1f"
+VER = "af1a69d276400f11caa79ecd7f48766f2e0e5939"
 
 def report(ver: str) -> None:
     rollbar.init(
@@ -14,7 +14,7 @@ def report(ver: str) -> None:
     )
 
     try:
-        1/0
+        1/0.0000001
     except:
         rollbar.report_exc_info()
 
